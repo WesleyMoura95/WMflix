@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>WMflix</h1>
+
+    <!-- Botões principais -->
+    <div class="menu">
+        <button onclick="mostrarCategoria('filmes')">Filmes</button>
+        <button onclick="mostrarCategoria('series')">Séries</button>
+        <button onclick="mostrarCategoria('documentarios')">Documentários</button>
+    </div>
+
+    <!-- Seção de FILMES -->
+    <div id="filmes" class="categoria">
+        <h2>Filmes</h2>
+        <div class="sub-menu">
+            <button onclick="mostrarSubcategoria('filmes-acao')">Ação e Aventura</button>
+            <button onclick="mostrarSubcategoria('filmes-comedia')">Comédia</button>
+            <button onclick="mostrarSubcategoria('filmes-drama')">Drama</button>
+            <button onclick="mostrarSubcategoria('filmes-ficcao')">Ficção Científica</button>
+            <button onclick="mostrarSubcategoria('filmes-suspense')">Suspense</button>
+            <button onclick="mostrarSubcategoria('filmes-romance')">Romance</button>
+            <button onclick="mostrarSubcategoria('filmes-animacao')">Animação</button>
+            <button onclick="mostrarSubcategoria('filmes-fantasia')">Fantasia</button>
+            <button onclick="mostrarSubcategoria('filmes-musical')">Musical</button>
+            <button onclick="mostrarSubcategoria('filmes-documentario')">Documentário</button>
+        </div>
+
+        <!-- Subcategorias de Filmes -->
+        <div id="filmes-acao" class="subcategoria">Filmes de Ação aqui...</div>
+        <div id="filmes-comedia" class="subcategoria">Filmes de Comédia aqui...</div>
+        <div id="filmes-drama" class="subcategoria">Filmes de Drama aqui...</div>
+        <div id="filmes-ficcao" class="subcategoria">Filmes de Ficção Científica aqui...</div>
+        <div id="filmes-suspense" class="subcategoria">Filmes de Suspense aqui...</div>
+        <div id="filmes-romance" class="subcategoria">Filmes de Romance aqui...</div>
+        <div id="filmes-animacao" class="subcategoria">Filmes de Animação aqui...</div>
+        <div id="filmes-fantasia" class="subcategoria">Filmes de Fantasia aqui...</div>
+        <div id="filmes-musical" class="subcategoria">Filmes Musicais aqui...</div>
+        <div id="filmes-documentario" class="subcategoria">Documentários aqui...</div>
+    </div>
+
+    <!-- Seção de SÉRIES -->
+    <div id="series" class="categoria">
+        <h2>Séries</h2>
+        <div class="sub-menu">
+            <button onclick="mostrarSubcategoria('series-acao')">Ação</button>
+            <button onclick="mostrarSubcategoria('series-comedia')">Comédia</button>
+            <button onclick="mostrarSubcategoria('series-drama')">Drama</button>
+            <button onclick="mostrarSubcategoria('series-ficcao')">Ficção Científica</button>
+            <button onclick="mostrarSubcategoria('series-romance')">Romance</button>
+            <button onclick="mostrarSubcategoria('series-suspense')">Suspense</button>
+            <button onclick="mostrarSubcategoria('series-policial')">Policial</button>
+            <button onclick="mostrarSubcategoria('series-animacao')">Animação</button>
+            <button onclick="mostrarSubcategoria('series-fantasia')">Fantasia</button>
+        </div>
+
+        <!-- Subcategorias de Séries -->
+        <div id="series-acao" class="subcategoria">Séries de Ação aqui...</div>
+        <div id="series-comedia" class="subcategoria">Séries de Comédia aqui...</div>
+        <div id="series-drama" class="subcategoria">Séries de Drama aqui...</div>
+        <div id="series-ficcao" class="subcategoria">Séries de Ficção Científica aqui...</div>
+        <div id="series-romance" class="subcategoria">Séries de Romance aqui...</div>
+        <div id="series-suspense" class="subcategoria">Séries de Suspense aqui...</div>
+        <div id="series-policial" class="subcategoria">Séries Policiais aqui...</div>
+        <div id="series-animacao" class="subcategoria">Séries de Animação aqui...</div>
+        <div id="series-fantasia" class="subcategoria">Séries de Fantasia aqui...</div>
+    </div>
+
+    <!-- Seção de DOCUMENTÁRIOS -->
+    <div id="documentarios" class="categoria">
+        <h2>Documentários</h2>
+        <div class="sub-menu">
+            <button onclick="mostrarSubcategoria('doc-crimes')">Crimes Reais</button>
+            <button onclick="mostrarSubcategoria('doc-natureza')">Natureza e Vida Selvagem</button>
+            <button onclick="mostrarSubcategoria('doc-historico')">Histórico</button>
+            <button onclick="mostrarSubcategoria('doc-ambiental')">Ambiental</button>
+            <button onclick="mostrarSubcategoria('doc-social')">Social e Cultural</button>
+            <button onclick="mostrarSubcategoria('doc-biografia')">Biografia</button>
+            <button onclick="mostrarSubcategoria('doc-esportes')">Esportes</button>
+            <button onclick="mostrarSubcategoria('doc-antropologico')">Antropológico</button>
+            <button onclick="mostrarSubcategoria('doc-politica')">Política</button>
+        </div>
+
+        <!-- Subcategorias de Documentários -->
+        <div id="doc-crimes" class="subcategoria">Documentários sobre Crimes Reais aqui...</div>
+        <div id="doc-natureza" class="subcategoria">Documentários sobre Natureza aqui...</div>
+        <div id="doc-historico" class="subcategoria">Documentários Históricos aqui...</div>
+        <div id="doc-ambiental" class="subcategoria">Documentários Ambientais aqui...</div>
+        <div id="doc-social" class="subcategoria">Documentários Sociais aqui...</div>
+        <div id="doc-biografia" class="subcategoria">Documentários de Biografia aqui...</div>
+        <div id="doc-esportes" class="subcategoria">Documentários Esportivos aqui...</div>
+        <div id="doc-antropologico" class="subcategoria">Documentários Antropológicos aqui...</div>
+        <div id="doc-politica" class="subcategoria">Documentários Políticos aqui...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

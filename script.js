@@ -55,3 +55,49 @@ document.addEventListener('keydown', function(event) {
         document.activeElement.click();
     }
 });
+
+// Função para mostrar apenas a subcategoria clicada
+function mostrarSubcategoria(subcategoria) {
+    // Remover a classe 'active' de todos os botões
+    var buttons = document.querySelectorAll('.sub-menu button');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+
+    // Adicionar a classe 'active' ao botão clicado
+    var selectedButton = document.querySelector('[onclick="mostrarSubcategoria(\'' + subcategoria + '\')"]');
+    if (selectedButton) {
+        selectedButton.classList.add('active');
+    }
+
+    // Ocultar as subcategorias
+    var subcategorias = document.getElementsByClassName('subcategoria');
+    for (var i = 0; i < subcategorias.length; i++) {
+        subcategorias[i].style.display = 'none';
+    }
+
+// Função para mostrar apenas a subcategoria clicada
+function mostrarSubcategoria(subcategoria) {
+    // Remover a classe 'active' de todos os botões
+    var buttons = document.querySelectorAll('.sub-menu button');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+
+    // Adicionar a classe 'active' ao botão clicado
+    var selectedButton = document.querySelector('[onclick="mostrarSubcategoria(\'' + subcategoria + '\')"]');
+    if (selectedButton) {
+        selectedButton.classList.add('active');
+    }
+
+    // Ocultar as subcategorias
+    var subcategorias = document.getElementsByClassName('subcategoria');
+    for (var i = 0; i < subcategorias.length; i++) {
+        subcategorias[i].style.display = 'none';
+    }
+
+    // Mostrar a subcategoria clicada
+    document.getElementById(subcategoria).style.display = 'block';
+}
+
+}

@@ -7,48 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>WMflix</h1>
+    <!-- Logo WMflix -->
+    <a href="index.html" class="logo">WMflix</a>
     
     <div class="menu">
-        <button onclick="mostrarCategoria('categoria1')" tabindex="1">Filmes</button>
-        <button onclick="mostrarCategoria('categoria2')" tabindex="2">Series</button>
+        <button onclick="mostrarCategoria('categoria1')" tabindex="1" class="category-btn">Filmes</button>
+        <button onclick="mostrarCategoria('categoria2')" tabindex="2" class="category-btn">Séries</button>
+        <button onclick="mostrarCategoria('categoria3')" tabindex="3" class="category-btn">Documentários</button>
     </div>
 
     <div id="categoria1" class="categoria">
-        <h2>Categorias</h2>
         <div class="sub-menu">
-            <button onclick="mostrarSubcategoria('sub1')" tabindex="3">Ação e aventura</button>
-            <button onclick="mostrarSubcategoria('sub2')" tabindex="4">Animação</button>
-			<button onclick="mostrarSubcategoria('sub4')" tabindex="5">Comédia</button>
-			<button onclick="mostrarSubcategoria('sub5')" tabindex="6">Drama</button>
-			<button onclick="mostrarSubcategoria('sub6')" tabindex="7">Ficção científica</button>
-			<button onclick="mostrarSubcategoria('sub7')" tabindex="8">Suspense</button>
-			<button onclick="mostrarSubcategoria('sub8')" tabindex="9">Romance</button>
-			<button onclick="mostrarSubcategoria('sub9')" tabindex="10">Fantasia</button>
-			<button onclick="mostrarSubcategoria('sub10')" tabindex="11">Musical</button>
+            <button onclick="mostrarSubcategoria('sub1')" tabindex="4">Ação e aventura</button>
+            <button onclick="mostrarSubcategoria('sub2')" tabindex="5">Animação</button>
+			<button onclick="mostrarSubcategoria('sub4')" tabindex="6">Comédia</button>
+			<button onclick="mostrarSubcategoria('sub5')" tabindex="7">Drama</button>
+			<button onclick="mostrarSubcategoria('sub6')" tabindex="8">Ficção científica</button>
+			<button onclick="mostrarSubcategoria('sub7')" tabindex="9">Suspense</button>
+			<button onclick="mostrarSubcategoria('sub8')" tabindex="10">Romance</button>
+			<button onclick="mostrarSubcategoria('sub9')" tabindex="11">Fantasia</button>
+			<button onclick="mostrarSubcategoria('sub10')" tabindex="12">Musical</button>
         </div>
-        <div id="sub1" class="subcategoria">Conteúdo da Subcategoria 1</div>
-        <div id="sub2" class="subcategoria">Conteúdo da Subcategoria 2</div>
     </div>
 
     <div id="categoria2" class="categoria">
-        <h2>Categorias</h2>
+     <div class="sub-menu">
+        <button onclick="mostrarSubcategoria('sub1')" tabindex="4">Ação e aventura</button>
+        <button onclick="mostrarSubcategoria('sub2')" tabindex="5">Animação</button>
+        <button onclick="mostrarSubcategoria('sub4')" tabindex="6">Comédia</button>
+        <button onclick="mostrarSubcategoria('sub5')" tabindex="7">Drama</button>
+        <button onclick="mostrarSubcategoria('sub6')" tabindex="8">Ficção científica</button>
+        <button onclick="mostrarSubcategoria('sub7')" tabindex="9">Suspense</button>
+        <button onclick="mostrarSubcategoria('sub8')" tabindex="10">Romance</button>
+        <button onclick="mostrarSubcategoria('sub9')" tabindex="11">Fantasia</button>
+        <button onclick="mostrarSubcategoria('sub10')" tabindex="12">Musical</button>
+    </div>
+</div>
+
+    <div id="categoria3" class="categoria">
         <div class="sub-menu">
-            <button onclick="mostrarSubcategoria('sub1')" tabindex="3">Ação e aventura</button>
-            <button onclick="mostrarSubcategoria('sub2')" tabindex="4">Animação</button>
-			<button onclick="mostrarSubcategoria('sub4')" tabindex="5">Comédia</button>
-			<button onclick="mostrarSubcategoria('sub5')" tabindex="6">Drama</button>
-			<button onclick="mostrarSubcategoria('sub6')" tabindex="7">Ficção científica</button>
-			<button onclick="mostrarSubcategoria('sub7')" tabindex="8">Suspense</button>
-			<button onclick="mostrarSubcategoria('sub8')" tabindex="9">Romance</button>
-			<button onclick="mostrarSubcategoria('sub9')" tabindex="10">Fantasia</button>
-			<button onclick="mostrarSubcategoria('sub10')" tabindex="11">Musical</button>
-			<button onclick="mostrarSubcategoria('sub11')" tabindex="11">Policial</button>
+            <button onclick="mostrarSubcategoria('sub7')" tabindex="10">Biográfico</button>
+            <button onclick="mostrarSubcategoria('sub8')" tabindex="11">Político</button>
+            <button onclick="mostrarSubcategoria('sub9')" tabindex="12">Natureza e vida selvagem</button>
+            
         </div>
-        <div id="sub3" class="subcategoria">Conteúdo da Subcategoria 3</div>
-        <div id="sub4" class="subcategoria">Conteúdo da Subcategoria 4</div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+<div class="video-container">
+    <iframe src="https://drive.google.com/file/d/1F-cvv9NtV_K05meT_xqdP7ePPlMk-OzO/preview" width="640" height="360" allow="autoplay" allowfullscreen></iframe>
+</div>
